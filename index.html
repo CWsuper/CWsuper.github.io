@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,57 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-var标识符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/30/var标识符/" class="article-date">
+  <time datetime="2017-01-30T13:03:59.000Z" itemprop="datePublished">2017-01-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/30/var标识符/">var标识符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>该关键字定义的变量是作用域内的一个局部标量。也就是说，如果在函数内声明一个变量，该变量在函数退出后会被销毁。</p>
+<pre><code>function test(){
+var message = &quot;hi&quot;;//局部变量
+}
+test();
+alert(message);//error!
+</code></pre><p>不过可以省略var直接给变量赋值，<strong>不过此时没有定义</strong>，这样在外边调用一次函数，该变量就有了定义，可以在函数外任何地方使用<strong>（虽然省略var操作符可以定义全局变量，但是不推荐这样用，首先它在严格模式下会报错，而且，这样做也会由于相应的变量不会立马就有定义而导致不必要的混乱 ）</strong></p>
+<pre><code>function test(){
+   message = &quot;hi&quot;;  //全局变量
+}
+test();
+alert(message);    //&quot;hi&quot;
+</code></pre><hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/30/var标识符/" data-id="ciyk3ykf80000ug55q0z9asnr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript中的var/">javascript中的var</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -89,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/30/2/" data-id="ciyjy1it200002455s3mbdjiu" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/01/30/2/" data-id="ciyk3xwz80000xc55qrskrfh0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -135,7 +186,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/30/hello-world/" data-id="ciyjy1ith00012455s9cw0h65" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/01/30/hello-world/" data-id="ciyk3xwzc0001xc550ekb1w2f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,9 +205,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript中的var/">javascript中的var</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/javascript中的var/" style="font-size: 10px;">javascript中的var</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -170,9 +235,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/01/30/var标识符/">var标识符</a>
+          </li>
         
           <li>
             <a href="/2017/01/30/2/">Hello World</a>
@@ -195,7 +264,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

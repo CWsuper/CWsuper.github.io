@@ -3,21 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我是程伟2，我的个人博客搭建成功了！！！
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can as">
+  <meta name="description" content="title:javascript中的 “var”该关键字定义的变量是作用域内的一个局部标量。也就是说，如果在函数内声明一个变量，该变量在函数退出后会被销毁。
+function test(){
+var message = &amp;quot;hi&amp;quot;;//局部变量
+}
+test();
+alert(message);//error!
+不过可以省略var直接给变量赋值，不过此时没有定义，这样在外边调用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/01/30/2/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2017/01/30/myblog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="我是程伟2，我的个人博客搭建成功了！！！
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can as">
-<meta property="og:updated_time" content="2017-01-30T09:40:52.897Z">
+<meta property="og:description" content="title:javascript中的 “var”该关键字定义的变量是作用域内的一个局部标量。也就是说，如果在函数内声明一个变量，该变量在函数退出后会被销毁。
+function test(){
+var message = &amp;quot;hi&amp;quot;;//局部变量
+}
+test();
+alert(message);//error!
+不过可以省略var直接给变量赋值，不过此时没有定义，这样在外边调用">
+<meta property="og:updated_time" content="2017-01-30T13:02:23.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="我是程伟2，我的个人博客搭建成功了！！！
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can as">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title:javascript中的 “var”该关键字定义的变量是作用域内的一个局部标量。也就是说，如果在函数内声明一个变量，该变量在函数退出后会被销毁。
+function test(){
+var message = &amp;quot;hi&amp;quot;;//局部变量
+}
+test();
+alert(message);//error!
+不过可以省略var直接给变量赋值，不过此时没有定义，这样在外边调用">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -66,35 +81,37 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-2" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-myblog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/01/30/2/" class="article-date">
-  <time datetime="2017-01-30T09:39:26.831Z" itemprop="datePublished">2017-01-30</time>
+    <a href="/2017/01/30/myblog/" class="article-date">
+  <time datetime="2017-01-30T12:52:14.797Z" itemprop="datePublished">2017-01-30</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>我是程伟2，我的个人博客搭建成功了！！！</strong></p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a></p>
+        <hr>
+<h2 id="title-javascript中的-“var”"><a href="#title-javascript中的-“var”" class="headerlink" title="title:javascript中的 “var”"></a>title:javascript中的 “var”</h2><p>该关键字定义的变量是作用域内的一个局部标量。也就是说，如果在函数内声明一个变量，该变量在函数退出后会被销毁。</p>
+<pre><code>function test(){
+var message = &quot;hi&quot;;//局部变量
+}
+test();
+alert(message);//error!
+</code></pre><p>不过可以省略var直接给变量赋值，<strong>不过此时没有定义</strong>，这样在外边调用一次函数，该变量就有了定义，可以在函数外任何地方使用<strong>（虽然省略var操作符可以定义全局变量，但是不推荐这样用，首先它在严格模式下会报错，而且，这样做也会由于相应的变量不会立马就有定义而导致不必要的混乱 ）</strong></p>
+<pre><code>function test(){
+   message = &quot;hi&quot;;  //全局变量
+}
+test();
+alert(message);    //&quot;hi&quot;
+</code></pre><hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/30/2/" data-id="ciyk3xwz80000xc55qrskrfh0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/30/myblog/" data-id="ciyk3svgi0000oo55yrd4tx5p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -103,17 +120,8 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
     
 <nav id="article-nav">
   
-    <a href="/2017/01/30/var标识符/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          var标识符
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/01/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/01/30/2/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
@@ -131,23 +139,9 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript中的var/">javascript中的var</a></li></ul>
-    </div>
-  </div>
-
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/javascript中的var/" style="font-size: 10px;">javascript中的var</a>
-    </div>
-  </div>
-
   
     
   <div class="widget-wrap">
@@ -166,7 +160,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
       <ul>
         
           <li>
-            <a href="/2017/01/30/var标识符/">var标识符</a>
+            <a href="/2017/01/30/myblog/">(no title)</a>
           </li>
         
           <li>
